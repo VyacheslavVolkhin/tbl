@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner-wrap">
+                <div class="logo-wrap">
+                    <a href="" class="logo">Logo</a>
+                </div>
+                <div class="action-wrap js-popup-wrap">
+                    <a href="" class="btn-action js-btn-popup-toggle" data-count="3">
+                        <span class="button-ico">
+                            <img src="./img/icons/list.svg" alt="">
+                        </span>
+                    </a>
+                    <div class="action-content-block js-popup-block">
+                        <ul class="menu">
+                            <li><a href="">Закупка 1</a></li>
+                            <li><a href="">Закупка 2</a></li>
+                            <li><a href="">Закупка 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!-- page -->
+        <div class="page-full">
+
+            <!--search-box-->
+            <div class="search-box section-box">
+                <div class="section-title">Поиск по названию или коду ОКПД2/КТРУ</div>
+                <form action="/" class="frm-main-search">
+                    <div class="field-input">
+                        <input type="text" class="form-input" placeholder="Введите текст для поиска, например Бумага для офисной техники белая А4 ...">
+                    </div>
+                    <div class="field-button">
+                        <button type="submit" class="btn">
+                            <span class="button-ico">
+                                <img src="./img/icons/search.svg" alt="">
+                            </span>
+                            <span class="button-title">Поиск</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!--/search-box-->
+
+            <!--nav-box-->
+            <div class="nav-box">
+                <div class="title-inner-wrap">
+                    <div class="title-nav">
+                        <a href="" class="btn-action-back">Назад</a>
+                    </div>
+                </div>
+                <div class="buttons-inner-wrap">
+                    <div class="button-wrap">
+                        <a href="" class="btn">Закупка 1</a>
+                    </div>
+                    <div class="button-wrap">
+                        <a href="" class="btn button-border">Закупка 2</a>
+                    </div>
+                    <div class="button-wrap">
+                        <a href="" class="btn button-border">Закупка 3</a>
+                    </div>
+                </div>
+            </div>
+            <!--/nav-box-->
+
+            <!--table-box-->
+            <div class="table-box">
+                <div class="tbl-inner-wrap">
+                    <div class="tbl-title-wrap">
+                        <div class="tbl-select">
+                            <div class="frm-select">
+                                <input type="checkbox" id="sel01">
+                                <label for="sel01">Выбрать все</label>
+                            </div>
+                        </div>
+                        <div class="tbl-link"><a href="">Удалить выбранное</a></div>
+                        <div class="tbl-link"><a href="">Выгрузить в EXCEL</a></div>
+                    </div>
+                    <table class="tbl-main">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="frm-select select-clear">
+                                        <input type="checkbox" id="sel01">
+                                        <label for="sel01"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-title">Набор игрушек и настольных игр</div>
+                                    <div class="tbl-links">
+                                        <a href=""># Кабинет ОБЖ</a>
+                                        <a href="">#Изо</a>
+                                    </div>
+                                    <div class="tbl-tags">
+                                        <a href="" class="btn button-tag button-small">978</a>
+                                        <a href="" class="btn button-tag button-small">125</a>
+                                        <a href="" class="btn button-tag button-small">425</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код ОКПД2: </div>
+                                        32.40.39.129
+                                    </div>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код КТРУ: </div>
+                                        32.45.13.130
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-actions-wrap">
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Добавить в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Перейти в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/go.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="frm-select select-clear">
+                                        <input type="checkbox" id="sel02">
+                                        <label for="sel02"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-title">Набор игрушек и настольных игр</div>
+                                    <div class="tbl-links">
+                                        <a href=""># Кабинет ОБЖ</a>
+                                        <a href="">#Изо</a>
+                                    </div>
+                                    <div class="tbl-tags">
+                                        <a href="" class="btn button-tag button-small">978</a>
+                                        <a href="" class="btn button-tag button-small">125</a>
+                                        <a href="" class="btn button-tag button-small">425</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код ОКПД2: </div>
+                                        32.40.39.129
+                                    </div>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код КТРУ: </div>
+                                        32.45.13.130
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-actions-wrap">
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Добавить в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Перейти в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/go.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="frm-select select-clear">
+                                        <input type="checkbox" id="sel03">
+                                        <label for="sel03"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-title">Набор игрушек и настольных игр</div>
+                                    <div class="tbl-links">
+                                        <a href=""># Кабинет ОБЖ</a>
+                                        <a href="">#Изо</a>
+                                    </div>
+                                    <div class="tbl-tags">
+                                        <a href="" class="btn button-tag button-small">978</a>
+                                        <a href="" class="btn button-tag button-small">125</a>
+                                        <a href="" class="btn button-tag button-small">425</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код ОКПД2: </div>
+                                        32.40.39.129
+                                    </div>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код КТРУ: </div>
+                                        32.45.13.130
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-actions-wrap">
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Добавить в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Перейти в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/go.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="frm-select select-clear">
+                                        <input type="checkbox" id="sel04">
+                                        <label for="sel04"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-title">Набор игрушек и настольных игр</div>
+                                    <div class="tbl-links">
+                                        <a href=""># Кабинет ОБЖ</a>
+                                        <a href="">#Изо</a>
+                                    </div>
+                                    <div class="tbl-tags">
+                                        <a href="" class="btn button-tag button-small">978</a>
+                                        <a href="" class="btn button-tag button-small">125</a>
+                                        <a href="" class="btn button-tag button-small">425</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код ОКПД2: </div>
+                                        32.40.39.129
+                                    </div>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код КТРУ: </div>
+                                        32.45.13.130
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-actions-wrap">
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Добавить в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Перейти в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/go.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="frm-select select-clear">
+                                        <input type="checkbox" id="sel05">
+                                        <label for="sel05"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-title">Набор игрушек и настольных игр</div>
+                                    <div class="tbl-links">
+                                        <a href=""># Кабинет ОБЖ</a>
+                                        <a href="">#Изо</a>
+                                    </div>
+                                    <div class="tbl-tags">
+                                        <a href="" class="btn button-tag button-small">978</a>
+                                        <a href="" class="btn button-tag button-small">125</a>
+                                        <a href="" class="btn button-tag button-small">425</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код ОКПД2: </div>
+                                        32.40.39.129
+                                    </div>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код КТРУ: </div>
+                                        32.45.13.130
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-actions-wrap">
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Добавить в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Перейти в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/go.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="frm-select select-clear">
+                                        <input type="checkbox" id="sel06">
+                                        <label for="sel06"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-title">Набор игрушек и настольных игр</div>
+                                    <div class="tbl-links">
+                                        <a href=""># Кабинет ОБЖ</a>
+                                        <a href="">#Изо</a>
+                                    </div>
+                                    <div class="tbl-tags">
+                                        <a href="" class="btn button-tag button-small">978</a>
+                                        <a href="" class="btn button-tag button-small">125</a>
+                                        <a href="" class="btn button-tag button-small">425</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код ОКПД2: </div>
+                                        32.40.39.129
+                                    </div>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код КТРУ: </div>
+                                        32.45.13.130
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-actions-wrap">
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Добавить в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Перейти в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/go.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="frm-select select-clear">
+                                        <input type="checkbox" id="sel07">
+                                        <label for="sel07"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-title">Набор игрушек и настольных игр</div>
+                                    <div class="tbl-links">
+                                        <a href=""># Кабинет ОБЖ</a>
+                                        <a href="">#Изо</a>
+                                    </div>
+                                    <div class="tbl-tags">
+                                        <a href="" class="btn button-tag button-small">978</a>
+                                        <a href="" class="btn button-tag button-small">125</a>
+                                        <a href="" class="btn button-tag button-small">425</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код ОКПД2: </div>
+                                        32.40.39.129
+                                    </div>
+                                    <div class="tbl-info-row">
+                                        <div class="tbl-info-title">Код КТРУ: </div>
+                                        32.45.13.130
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tbl-actions-wrap">
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Добавить в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="tbl-action">
+                                            <a href="" class="btn button-border button-medium">
+                                                <span class="button-title">Перейти в список</span>
+                                                <span class="button-ico">
+                                                    <img src="./img/icons/go.svg" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--/table-box-->
+
+        </div>
+        <!-- /page -->
+
+
+    </div>
+    <!-- /wrap -->
+
+
+
+</body>
+
+</html>

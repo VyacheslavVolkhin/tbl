@@ -1,3 +1,105 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.table-box {
+    margin-bottom: 20px;
+    .tbl-title-wrap {
+        background: #fff;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2px;
+        padding: 10px 10px 0 7px;
+        font-size: 14px;
+        line-height: 24px;
+        .tbl-select {
+            flex-shrink: 0;
+            margin: 0 3.2rem 10px 0;
+        }
+        .tbl-link {
+            flex-shrink: 0;
+            max-width: 100%;
+            margin: 0 4.2rem 10px 0;
+            a {
+                &:not(:hover) {
+                    color: #8C97A8;
+                }
+            }
+        }
+    }
+    table {
+        th, td {
+            &:first-child {
+                padding: 0;
+                width: 36px;
+                position: relative;
+            }
+            &:nth-child(2) {
+            }
+            &:nth-child(3) {
+                width: 26%;
+                min-width: 26%;
+            }
+            &:nth-child(4) {
+                width: 100px;
+            }
+        }
+        .frm-select.select-clear {
+            position: absolute;
+            top: 9px;
+            left: 7px;
+        }
+    }
+}
+.tiles-box {
+    margin-bottom: 20px;
+    .items-wrap {
+        margin: 0 -1rem  -2rem  -1rem;
+    }
+    .item-wrap {
+        width: 25%;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+}
+.search-box {
+    padding: 20px 30px 22px 30px;
+}
+.section-box {
+    background: #fff;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    .section-title {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 0 10px 0;
+    }
+}
+.nav-box {
+    .buttons-inner-wrap {
+        margin: 0 -10px 5px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .title-inner-wrap {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .button-wrap {
+        padding: 0 10px 0 0;
+        flex-shrink: 0;
+        margin-bottom: 10px;
+    }
+    .title-nav {
+        font-weight: 500;
+        padding: 0 20px 0 0;
+        flex-shrink: 0;
+    }
+    .title-wrap {
+        flex: 1;
+        .h1-title {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,175 @@
+/* ----------------------------------- *\
+			inputs elements styles
+\* ----------------------------------- */
+.form-input[placeholder] {
+    text-overflow: ellipsis;
+}
+.form-input {
+    text-overflow: ellipsis;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0 10px 0 2rem;
+    font-size: 14px;
+    color: var(--clr-base);
+    background: #F3F7FA;
+    border: 1px solid #F3F7FA;
+}
+textarea.form-input {
+
+}
+[placeholder]::-webkit-input-placeholder {color: #8C97A8;}
+[placeholder]:-moz-placeholder {color: #8C97A8;}
+[placeholder]::-moz-placeholder {color: #8C97A8;}
+[placeholder]:-ms-input-placeholder {color: #8C97A8;}
+select.form-input {
+    display: block;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding-right: 30px;
+    background-image: url(../img/icons/arrow-select.svg);
+    background-position: right 20px center;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    appearance: none!important;
+    line-height: 1em;
+    text-indent: 0.01px;
+    //text-overflow: '';
+    outline: none;
+    &.form-input-clear {
+        height: auto;
+        border: none;
+        min-height: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1em;
+        line-height: inherit;
+        padding: 0 16px 0 0;
+        color: inherit;
+        font-weight: bold;
+        background-image: url(../img/icons/arrow-select.png);
+        background-size: 8px auto;
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+}
+select::-ms-expand {
+    display: none;
+}
+//   <select class="form-input form-input-line" required>
+//       <option value="" disabled selected hidden>Выбрать</option>
+//       <option>Пункт списка</option>
+//   </select>
+select.form-input:required:invalid {
+    color: #ADADAD;
+}
+.btn {
+    height: 42px;
+    border-radius: 8px;
+    padding: 0 2.9rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid var(--clr-att);
+    background: var(--clr-att);
+    &:hover, &.active {
+        background: var(--clr-text-att);
+        border-color: var(--clr-text-att);
+        color: #fff;
+        .button-ico {
+            filter: brightness(0) invert(1);
+        }
+    }
+    &.button-small {
+        font-weight: 400;
+        height: 18px;
+        padding: 0 12px;
+        min-width: 45px;
+        border-radius: 9px;
+        font-size: 10px;
+    }
+    &.button-medium {
+        height: 36px;
+        padding: 0 13px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    &.button-tag {
+        &:not(:hover, .active) {
+            background-color: #ECF8FF;
+            border-color: #ECF8FF;
+            color: var(--clr-text-att);
+        }
+    }
+    &.button-border {
+        &:not(:hover) {
+            background-color: #fff;
+            color: var(--clr-att);
+        }
+        &.active {
+            background: var(--clr-text-att);
+            border-color: var(--clr-text-att);
+            color: #fff;
+        }
+    }
+    .button-ico {
+        width: 24px;
+        height: 24px;
+        margin: 0 10px;
+        transition: all ease 0.2s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .button-title {
+        &[data-title] {
+            &:before {
+                content: attr(data-title);
+            }
+        }
+    }
+    &.active {
+        .button-title {
+            &[data-title-active] {
+                &:before {
+                    content: attr(data-title-active);
+                }
+            }
+        }
+    }
+    &[disabled], &.button-disabled {
+        border-color: #768396;
+        background-color: #768396;
+        color: #fff;
+        pointer-events: none;
+        &.button-border {
+            background-color: transparent;
+            color: #768396;
+        }
+    }
+}
+.btn-action-back {
+    display: inline-block;
+    position: relative;
+    padding-left: 26px;
+    &:before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background: url(../img/icons/arrow-back.svg) center no-repeat;
+        background-size: 100% auto;
+        top: 50%;
+        left: 1px;
+        margin-top: -14px;
+    }
+}
